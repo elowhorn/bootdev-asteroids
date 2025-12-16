@@ -45,3 +45,6 @@ class Player(CircleShape):
             self.move(-dt)
 
         return
+
+    def collides_with(self, other: CircleShape):
+        return super().collides_with(other)
